@@ -21,9 +21,10 @@ public class PesquisarAgregadoService {
 
 	public List<ResultadoAgregadoDto> pesquisar() {
 		try {
-			System.out.println(urlMimg);
+			String url = urlMimg + "?agregado=647";
+			System.out.println(url);
 
-			HttpURLConnection conn = (HttpURLConnection) new URL(urlMimg).openConnection();
+			HttpURLConnection conn = (HttpURLConnection) new URL(url).openConnection();
 
 			conn.setRequestMethod("GET");
 			conn.setRequestProperty("Accept", "application/json");
