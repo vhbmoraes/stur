@@ -16,7 +16,7 @@ public class CalculoImpostoController {
 	@Autowired
 	private PesquisarAgregadoService servico;
 	
-	@RequestMapping("/imposto")
+	@RequestMapping("/resultadoIPTU")
 	public List<ImpostoDto> calcular(Integer inscricaoImovel)
 	{
 		if (inscricaoImovel == null || inscricaoImovel != 123456)
